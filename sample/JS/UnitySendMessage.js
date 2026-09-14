@@ -19,11 +19,11 @@ function sendDataToUnity() {
 let button = document.getElementById("button");
 button.addEventListener("click",sendDataToUnity);
 
-  // HTMLの解析が終わり、DOMツリーが完成したタイミング（画像などは未ロードでもOK）
-　document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOMの準備ができました');
-    Unity.call("PlayEffect");       
-　});
+// HTMLの解析が終わり、DOMツリーが完成したタイミング（画像などは未ロードでもOK）
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOMの準備ができました');
+  Unity.call("PlayEffect");       
+});
 
 // 画像やスタイルシートも含め、すべてのリソースが読み込み完了したタイミング
 window.addEventListener('load', () => {
