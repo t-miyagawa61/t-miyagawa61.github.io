@@ -25,11 +25,11 @@ button.addEventListener("click",sendDataToUnity);
 // HTMLの解析が終わり、DOMツリーが完成したタイミング（画像などは未ロードでもOK）
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOMの準備ができました');
-  Unity.call("PlayEffect");       
+  //Unity.call("PlayEffect");       
 });
 
 // 画像やスタイルシートも含め、すべてのリソースが読み込み完了したタイミング
 window.addEventListener('load', () => {
   console.log('すべてのリソースの読み込みが完了しました');
-  //Unity.call("PlayEffect");
+  Unity.call("PlayEffect");
 });
