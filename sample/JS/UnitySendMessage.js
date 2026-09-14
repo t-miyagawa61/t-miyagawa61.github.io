@@ -18,10 +18,10 @@ function sendDataToUnity() {
   document.body.style.display = 'none';
   location.href = "result.html";    
 }
-
+/*
 let button = document.getElementById("button");
 button.addEventListener("click",sendDataToUnity);
-
+*/
   
 // HTMLの解析が終わり、DOMツリーが完成したタイミング（画像などは未ロードでもOK）
 document.addEventListener('DOMContentLoaded', () => {
