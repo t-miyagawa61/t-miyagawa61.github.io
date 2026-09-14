@@ -13,11 +13,12 @@ createUnityInstance(document.querySelector("#unity-canvas"), config, (progress) 
 */
 function sendDataToUnity() {
   console.log('sendDataToUnity()を呼びました');
-  //const data = "PlayEffect";
-  location.href = "result.html";
-  // 引数：( "オブジェクト名", "関数名", "渡したい文字列" )
-  //unityInstance.SendMessage('SampleAnimetion_0', 'PlayAnimation', data);
-    
+  location.href = "result.html";    
+}
+
+let button = document.getElementById("button");
+button.addEventListener("click",sendDataToUnity);
+
   // HTMLの解析が終わり、DOMツリーが完成したタイミング（画像などは未ロードでもOK）
 　document.addEventListener('DOMContentLoaded', () => {
     console.log('DOMの準備ができました');
@@ -29,12 +30,3 @@ window.addEventListener('load', () => {
   console.log('すべてのリソースの読み込みが完了しました');
   //Unity.call("PlayEffect");
 });
-  
-    
-    
-}
-
-let button = document.getElementById("button");
-button.addEventListener("click",sendDataToUnity);
-
-
