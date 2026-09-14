@@ -12,12 +12,13 @@ createUnityInstance(document.querySelector("#unity-canvas"), config, (progress) 
 });
 */
 
-/*
+
 function sendDataToUnity() {
   console.log('sendDataToUnity()を呼びました');
+  document.body.style.display = 'none';
   location.href = "result.html";    
 }
-
+/*
 let button = document.getElementById("button");
 button.addEventListener("click",sendDataToUnity);
 */
