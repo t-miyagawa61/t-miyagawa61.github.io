@@ -275,8 +275,11 @@
 
       <!-- ボタンエリア -->
       <div class="action-area">
-		<button type="button" class="btn-submit" id="button">演出再生とくじをひく</button>
+		<button type="button" class="btn-submit" onclick="location.href='result.html'">演出再生とくじをひく</button>  
+		<!-- ここで演出読み込むと画面が残ってしまうので、遷移先で画面読み込みを待ってから演出を再生する 
+		<button type="button" class="btn-submit" id="button">演出再生とくじをひく</button> 
 		<script type="text/javascript" src="https://t-miyagawa61.github.io/sample/JS/UnitySendMessage.js"></script>
+		-->
       </div>
     </main>
 
