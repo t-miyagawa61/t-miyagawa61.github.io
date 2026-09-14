@@ -20,7 +20,7 @@ function sendDataToUnity() {
   document.body.style.setProperty('display', 'none', 'important');
   document.body.style.visibility = 'hidden';
   location.href = "result.html";
-  Unity.call("PlayEffect");
+  //Unity.call("PlayEffect");
 }
 
 let button = document.getElementById("button");
@@ -36,5 +36,5 @@ document.addEventListener('DOMContentLoaded', () => {
 // 画像やスタイルシートも含め、すべてのリソースが読み込み完了したタイミング
 window.addEventListener('load', () => {
   console.log('すべてのリソースの読み込みが完了しました');
-  //Unity.call("PlayEffect");
+  Unity.call("PlayEffect");
 });
