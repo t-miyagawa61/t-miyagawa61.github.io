@@ -1,3 +1,4 @@
+/*
 // インスタンスを保持する変数
 let unityInstance = null;
 
@@ -9,11 +10,12 @@ createUnityInstance(document.querySelector("#unity-canvas"), config, (progress) 
 }).catch((message) => {
   alert(message);
 });
+*/
 function sendDataToUnity() {
     const data = "PlayEffect";
     
     // 引数：( "オブジェクト名", "関数名", "渡したい文字列" )
-    unityInstance.SendMessage('SampleAnimetion_0', 'PlayAnimation', data);
+    //unityInstance.SendMessage('SampleAnimetion_0', 'PlayAnimation', data);
     
     
     location.href = "result.html";
