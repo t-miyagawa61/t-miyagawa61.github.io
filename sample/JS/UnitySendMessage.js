@@ -12,11 +12,24 @@ createUnityInstance(document.querySelector("#unity-canvas"), config, (progress) 
 });
 */
 function sendDataToUnity() {
-    //const data = "PlayEffect";
-    location.href = "result.html";
-    // 引数：( "オブジェクト名", "関数名", "渡したい文字列" )
-    //unityInstance.SendMessage('SampleAnimetion_0', 'PlayAnimation', data);
-    Unity.call("PlayEffect");
+  
+  //const data = "PlayEffect";
+  location.href = "result.html";
+  // 引数：( "オブジェクト名", "関数名", "渡したい文字列" )
+  //unityInstance.SendMessage('SampleAnimetion_0', 'PlayAnimation', data);
+    
+  // HTMLの解析が終わり、DOMツリーが完成したタイミング（画像などは未ロードでもOK）
+　document.addEventListener('DOMContentLoaded', () =>
+    console.log('DOMの準備ができました');
+    Unity.call("PlayEffect");       
+　});
+
+// 画像やスタイルシートも含め、すべてのリソースが読み込み完了したタイミング
+window.addEventListener('load', () => {
+  console.log('すべてのリソースの読み込みが完了しました');
+  //Unity.call("PlayEffect");
+});
+  
     
     
 }
