@@ -19,7 +19,7 @@ function sendDataToUnity() {
   //unityInstance.SendMessage('SampleAnimetion_0', 'PlayAnimation', data);
     
   // HTMLの解析が終わり、DOMツリーが完成したタイミング（画像などは未ロードでもOK）
-　document.addEventListener('DOMContentLoaded', () =>
+　document.addEventListener('DOMContentLoaded', () => {
     console.log('DOMの準備ができました');
     Unity.call("PlayEffect");       
 　});
