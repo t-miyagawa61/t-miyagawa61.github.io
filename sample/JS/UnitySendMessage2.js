@@ -12,7 +12,7 @@ createUnityInstance(document.querySelector("#unity-canvas"), config, (progress) 
 });
 */
 
-
+/*
 function sendDataToUnity() {
   console.log('sendDataToUnity()を呼びました');
   //document.body.style.display = 'none';
@@ -25,7 +25,7 @@ function sendDataToUnity() {
 let button = document.getElementById("button");
 button.addEventListener("click",sendDataToUnity);
 
-  
+*/
 // HTMLの解析が終わり、DOMツリーが完成したタイミング（画像などは未ロードでもOK）
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOMの準備ができました');
