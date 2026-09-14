@@ -16,7 +16,8 @@ createUnityInstance(document.querySelector("#unity-canvas"), config, (progress) 
 function sendDataToUnity() {
   console.log('sendDataToUnity()を呼びました');
   //document.body.style.display = 'none';
-  document.body.style.display = 'none !important';
+  //document.body.style.display = 'none !important';
+  document.body.style.setProperty('display', 'none', 'important');
   document.body.style.visibility = 'hidden';
   location.href = "result.html";
   //Unity.call("PlayEffect");
