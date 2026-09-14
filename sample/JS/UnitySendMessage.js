@@ -16,7 +16,8 @@ createUnityInstance(document.querySelector("#unity-canvas"), config, (progress) 
 function sendDataToUnity() {
   console.log('sendDataToUnity()を呼びました');
   document.body.style.display = 'none';
-  location.href = "result.html";    
+  location.href = "result.html";
+  Unity.call("PlayEffect");
 }
 
 let button = document.getElementById("button");
@@ -32,5 +33,5 @@ document.addEventListener('DOMContentLoaded', () => {
 // 画像やスタイルシートも含め、すべてのリソースが読み込み完了したタイミング
 window.addEventListener('load', () => {
   console.log('すべてのリソースの読み込みが完了しました');
-  Unity.call("PlayEffect");
+  //Unity.call("PlayEffect");
 });
