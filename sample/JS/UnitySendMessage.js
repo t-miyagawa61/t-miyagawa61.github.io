@@ -12,11 +12,11 @@ createUnityInstance(document.querySelector("#unity-canvas"), config, (progress) 
 });
 */
 function sendDataToUnity() {
-    const data = "PlayEffect";
+    //const data = "PlayEffect";
     
     // 引数：( "オブジェクト名", "関数名", "渡したい文字列" )
     //unityInstance.SendMessage('SampleAnimetion_0', 'PlayAnimation', data);
-    
+    Unity.call("PlayEffect");
     
     location.href = "result.html";
 }
