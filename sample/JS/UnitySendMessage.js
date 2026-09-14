@@ -20,7 +20,7 @@ function sendDataToUnity() {
   document.body.style.setProperty('display', 'none', 'important');
   document.body.style.visibility = 'hidden';
   location.href = "result.html";
-  //Unity.call("PlayEffect");
+  Unity.call("PlayEffect");
 }
 
 let button = document.getElementById("button");
