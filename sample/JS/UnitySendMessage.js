@@ -12,7 +12,7 @@ createUnityInstance(document.querySelector("#unity-canvas"), config, (progress) 
 });
 */
 function sendDataToUnity() {
-  
+  console.log('sendDataToUnity()を呼びました');
   //const data = "PlayEffect";
   location.href = "result.html";
   // 引数：( "オブジェクト名", "関数名", "渡したい文字列" )
