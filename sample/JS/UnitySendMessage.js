@@ -29,7 +29,8 @@ button.addEventListener("click",sendDataToUnity);
 
 // Unityから呼び出される関数をあらかじめ定義しておく
 function showResult(status) {
-   document.body.style.setProperty('display', 'none', 'important');
+  console.log('showResultを実行');
+  document.body.style.setProperty('display', 'none', 'important');
   document.body.style.visibility = 'hidden';
   location.href = "result.html";
 }
