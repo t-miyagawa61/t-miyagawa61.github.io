@@ -20,7 +20,7 @@ function sendDataToUnity() {
   Unity.call("PlayEffect");
   document.body.style.setProperty('display', 'none', 'important');
   document.body.style.visibility = 'hidden';
-  //location.href = "result.html";
+  location.href = "result.html";
 
 }
 
@@ -32,7 +32,7 @@ function showResult(status) {
   console.log('showResultを実行');
   document.body.style.setProperty('display', 'none', 'important');
   document.body.style.visibility = 'hidden';
-  location.href = "result.html";
+  //location.href = "result.html";
 }
   
 // HTMLの解析が終わり、DOMツリーが完成したタイミング（画像などは未ロードでもOK）
